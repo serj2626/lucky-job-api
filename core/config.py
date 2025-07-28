@@ -9,16 +9,17 @@ class RunConfig(BaseModel):
 
 
 class AppConfig(BaseModel):
-    title: str = "FastAPI Skeleton"
+    title: str = "Lucky Job API"
     version: str = "1.0.0"
-    description: str = "FastAPI Skeleton"
-    summary: str = "FastAPI Skeleton"
+    description: str = "This is a description by search jobs API"
+    summary: str = "This is a summary by search jobs API"
 
 
 class ApiPrefixConfig(BaseModel):
     prefix: str = "/api"
-    products: str = "/products"
+    resumes: str = "/resumes"
     users: str = "/users"
+    vacancies: str = "/vancancies"
 
 
 class JWTSettings(BaseModel):
