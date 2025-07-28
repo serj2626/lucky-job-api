@@ -1,0 +1,61 @@
+# Virtual environment
+venv/
+.env/
+.venv/
+env/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE and editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables
+.env
+.env.local
+.env.dev
+.env.prod
+
+# Logs
+*.log
+logs/
+
+# Static and media files (если они генерируются в рантайме)
+static/
+media/
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Distribution / build
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# macOS
+.DS_Store
+
+# Test files
+tests/_output/*
+tests/_support/*
+
+# FastAPI specific (если используете SQLite базы данных в разработке)
+*.db
+*.sqlite
+
+# PyCharm
+.idea/
+*.iml
+
+# VS Code
+.vscode/
