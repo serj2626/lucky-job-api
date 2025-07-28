@@ -3,13 +3,13 @@ from pydantic import BaseModel, EmailStr
 from enums.user_role import UserRole
 
 
-class UserCreateS(BaseModel):
+class SUserCreate(BaseModel):
     email: EmailStr
     password: str
     role: UserRole
 
 
-class UserOutS(BaseModel):
+class SUserOut(BaseModel):
     id: str
     email: EmailStr
     role: UserRole
@@ -19,6 +19,6 @@ class UserOutS(BaseModel):
         orm_mode = True
 
 
-class TokenS(BaseModel):
+class SToken(BaseModel):
     access_token: str
     token_type: str = "bearer"

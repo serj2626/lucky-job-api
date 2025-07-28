@@ -1,10 +1,11 @@
 from sqlalchemy.ext.asyncio import AsyncSession
+
+from backend.core.auth import hash_password
 from models.user import User
-from schemas.user import UserCreateS
-from core.security import hash_password
+from schemas.user import SUserCreate
 
 
-async def create_user(user_in: UserCreateS, db: AsyncSession) -> User:
+async def create_user(user_in: SUserCreate, db: AsyncSession) -> User:
     user = User(
         email=user_in.email,
         password_hash=hash_password(user_in.password),

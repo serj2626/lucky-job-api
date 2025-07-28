@@ -1,8 +1,9 @@
-from sqlalchemy.ext.declarative import declarative_base, declared_attr
 import uuid
 
+from sqlalchemy.ext.declarative import declarative_base, declared_attr
+
 DeclarativeBase = declarative_base()
-from sqlalchemy.orm import mapped_column, Mapped
+from sqlalchemy.orm import Mapped, mapped_column
 
 
 class Base(DeclarativeBase):

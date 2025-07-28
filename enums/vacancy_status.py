@@ -12,5 +12,5 @@ class VacancyStatus(str, Enum):
 # from sqlalchemy.orm import Mapped, mapped_column
 # from app.enums.vacancy_status import VacancyStatus
 
-# status: Mapped[VacancyStatus] = mapped_column(SQLEnum(VacancyStatus), 
+# status: Mapped[VacancyStatus] = mapped_column(SQLEnum(VacancyStatus),
 # default=VacancyStatus.draft)
